@@ -1,0 +1,30 @@
+body {
+  font-family: helvetica;
+  font-size: 15pt;
+  padding: 20 0;
+  background: #e1e1e1;
+}
+.container {
+  width: 60%;
+  max-width: 300px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+h1 {
+  font-size: 24pt;
+  color: #ccc;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.error {
+  font-size: 12pt;
+  color: red;
+}
+ul li {
+  list-style-type: none;
+}
