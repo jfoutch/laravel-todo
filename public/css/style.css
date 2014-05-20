@@ -1,12 +1,10 @@
+@import url(bootstrap.css);
+
 body {
-  font-family: helvetica;
-  font-size: 15pt;
-  padding: 20 0;
-  background: #e1e1e1;
+  font-size: 16pt;
+  background: #ebfffe;
 }
 .container {
-  width: 60%;
-  max-width: 300px;
   margin: 0 auto;
   background: #ffffff;
   border: 1px solid #ccc;
@@ -15,10 +13,16 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
 }
 
+.header {
+  background-color: #005c57;
+}
+
 h1 {
+  font-size: 36pt;
+  color: #fff;
+}
+h4 {
   font-size: 24pt;
-  color: #ccc;
-  border-bottom: 1px solid #e1e1e1;
 }
 
 .error {
@@ -27,4 +31,13 @@ h1 {
 }
 ul li {
   list-style-type: none;
+}
+
+.delete {
+  margin-left: 65px;
+}
+
+.btn-default {
+  background-color: #00BFB4;
+  color: white;
 }

@@ -2,7 +2,7 @@
 
 @section('content')
 
-  <h1>Create New Task</h1>
+  <h4>Create New Task</h4>
 
   @foreach ($errors->all() as $error)
     <p class="error">{{ $error }}</p>
@@ -12,7 +12,7 @@
 
       <input type="text" name="name" placeholder="The name of your task" />
 
-      <input type="submit" value="Create" />
+      <input type="submit" value="Create" class="btn btn-default" />
 
   {{ Form::close() }}
 
