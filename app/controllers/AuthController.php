@@ -41,4 +41,12 @@ class AuthController extends Controller {
     
   }
 
+  public function doLogout() {
+
+    Auth::logout(); 
+
+    return Redirect::to('login'); 
+
+  }
+
 }

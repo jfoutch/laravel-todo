@@ -35,9 +35,18 @@ ul li {
 
 .delete {
   margin-left: 65px;
+  color: #e1e1e1;
+}
+.delete a {
+  text-decoration: none;
+  color: gray;
 }
 
 .btn-default {
   background-color: #00BFB4;
   color: white;
+}
+.new a {
+  text-decoration: none;
+  color: blue;
 }
