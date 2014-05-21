@@ -70,3 +70,8 @@ form.form-signup {
 .list-inline {
   font-size: 10pt;
 }
+.welcome {
+  font-size: 10pt;
+  color: white;
+  text-align: right;
+}

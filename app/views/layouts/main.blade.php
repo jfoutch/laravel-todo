@@ -5,17 +5,23 @@
   </head>
   <body>
     <div class="container header">
-      <div class="col-md-10">
+      <div class="col-md-8">
         <h1 class="heading">{{ HTML::link('http://localhost:8888', 'Todo Application in Laravel') }}</h1>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-4">
         <div>
             @if(Session::has('message'))
                 <p class="alert">{{ Session::get('message') }}</p>
             @endif
         </div>
         
-           
+          @if (Auth::check())
+            <div class="welcome">
+              <p>Welcome {{ Auth::user()->firstname }}, you are logged in!</p>
+            </div>
+          @else
+
+          @endif
          
         <ul class="list-inline pull-right">
           <li><a href="{{ URL::route('login') }}">Login</a></li>
