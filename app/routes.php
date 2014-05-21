@@ -18,6 +18,8 @@ Route::post('/new', array('uses' => 'HomeController@postNew'))->before('csrf');
 
 Route::get('/delete/{task}', array('as' => 'delete', 'uses' => 'HomeController@getDelete'));
 
+Route::controller('users', 'UsersController');
+
 
 Route::get('/login', array('as' => 'login', 'uses' => 'AuthController@getLogin'))->before('guest');
 

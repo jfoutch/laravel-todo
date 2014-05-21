@@ -14,7 +14,7 @@ class AuthController extends Controller {
 
   public function postLogin() {
 
-    $rules = array('username' => 'required', 'password' => 'required');
+    $rules = array('email' => 'required', 'password' => 'required');
     $validator = Validator::make(Input::all(), $rules);
 
     if ($validator->fails()) {
@@ -22,7 +22,7 @@ class AuthController extends Controller {
     }
 
     $auth = Auth::attempt(array(
-        'name' => Input::get('username'),
+        'email' => Input::get('email'),
         'password' => Input::get('password')
 
       ), false);

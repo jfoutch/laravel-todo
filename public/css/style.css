@@ -3,6 +3,7 @@
 body {
   font-size: 16pt;
   background: #ebfffe;
+  padding-top: 20px;
 }
 .container {
   margin: 0 auto;
@@ -15,6 +16,11 @@ body {
 
 .header {
   background-color: #005c57;
+  margin-bottom: 20px;
+}
+.heading a {
+  text-decoration: none;
+  color: white;
 }
 
 h1 {
@@ -49,4 +55,18 @@ ul li {
 .new a {
   text-decoration: none;
   color: blue;
+}
+form.form-signup {
+  width: 600px;
+  margin: 0 auto;
+}
+.form-signup input {
+  width: 60%;
+  margin-top: 10px;
+}
+.form-signup input.btn.btn-large.btn-primary.btn-block {
+  width: 20%;
+}
+.list-inline {
+  font-size: 10pt;
 }
