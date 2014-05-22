@@ -2,6 +2,7 @@
   <head>
     <title>Todo Application by Jesse Foutch</title>
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
+    <script src="components/jquery/jquery.js"></script>
   </head>
   <body>
     <div class="container header">
@@ -18,16 +19,25 @@
           @if (Auth::check())
             <div class="welcome">
               <p>Welcome {{ Auth::user()->firstname }}, you are logged in!</p>
+              <a href="{{ URL::to('logout') }}">Logout</a>
             </div>
+
           @else
 
+              @if(Request::url() === 'http://localhost:8888/login')
+                <ul class="list-inline pull-right">      
+                  <li class="register"><a href="{{ URL::to('/users/register') }}">Register</a></li>
+                </ul>
+              @else
+                
+                  <ul class="list-inline pull-right">
+                    <li class="login"><a href="{{ URL::route('login') }}">Login</a></li>      
+                  </ul>
+              
+            @endif
           @endif
+
          
-        <ul class="list-inline pull-right">
-          <li><a href="{{ URL::route('login') }}">Login</a></li>
-          <li><a href="{{ URL::to('logout') }}">Logout</a></li>
-          <li><a href="{{ URL::to('/users/register') }}">Register</a></li>
-        </ul>
       </div>
     </div>
     <div class="container">

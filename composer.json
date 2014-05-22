@@ -5,7 +5,9 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.1.*",
-		"twitter/bootstrap": "dev-master"
+		"twitter/bootstrap": "dev-master",
+		"components/jquery": "dev-master",
+		"components/normalize.css": "2.*"
 	},
 	"autoload": {
 		"classmap": [
