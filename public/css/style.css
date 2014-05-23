@@ -1,4 +1,4 @@
-@import url(bootstrap.css);
+@import url('bootstrap.css');
 
 body {
   font-size: 16pt;
@@ -35,12 +35,15 @@ h4 {
   font-size: 12pt;
   color: red;
 }
+ul {
+  width: 400px;
+}
 ul li {
   list-style-type: none;
 }
 
 .delete {
-  margin-left: 65px;
+  float: right;
   color: #e1e1e1;
 }
 .delete a {
@@ -74,4 +77,8 @@ form.form-signup {
   font-size: 10pt;
   color: white;
   text-align: right;
+}
+.strike {
+  text-decoration: line-through;
+  color: #e1e1e1;
 }

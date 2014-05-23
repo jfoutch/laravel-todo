@@ -11,13 +11,14 @@
         
         {{ Form::open() }}
 
-          <input type="checkbox" 
+          <input type="checkbox" class="chkbox"
             onClick="this.form.submit()"
             {{ $item->done ? 'checked' : '' }} />
 
           <input type="hidden" name="id" value="{{ $item->id }}">
-
-          {{ e($item->name) }} <small class="delete"><a href="{{ URL::route('delete', $item->id) }}">x</a></small>
+           <span class="{{ ($item->done)? 'strike' : null; }}">{{ e($item->name) }}</span>
+           <small class="delete"><a href="{{ URL::route('delete', $item->id) }}">x</a></small>
+           
         {{ Form::close() }}
 
       </li>

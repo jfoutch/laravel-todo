@@ -2,7 +2,7 @@
   <head>
     <title>Todo Application by Jesse Foutch</title>
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
-    <script src="components/jquery/jquery.js"></script>
+    <script src="{{ URL::asset('js/jquery.js') }}"></script>
   </head>
   <body>
     <div class="container header">
