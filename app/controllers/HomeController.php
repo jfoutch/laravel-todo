@@ -52,6 +52,8 @@ class HomeController extends BaseController {
 
     }
 
+    // puts new item in database
+
     $item = new Item;
 
     $item->name = Input::get('name');
@@ -63,6 +65,25 @@ class HomeController extends BaseController {
     return Redirect::route('home');
 
   }
+
+   
+  public function getEdit() {
+
+    return View::make('edit');
+    }
+
+    public function postUpdate() {
+      $item = Item::find(1);
+
+      $item->name = Input::get('name');
+
+      $item->save();
+
+
+      return Redirect::route('home');
+
+    }
+
 
   public function getDelete(Item $task) {
 

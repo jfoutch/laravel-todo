@@ -82,3 +82,6 @@ form.form-signup {
   text-decoration: line-through;
   color: #e1e1e1;
 }
+.register {
+  float: right;
+}

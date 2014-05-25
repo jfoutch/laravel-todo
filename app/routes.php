@@ -16,6 +16,10 @@ Route::get('/new', array('as' => 'new', 'uses' => 'HomeController@getNew'));
 
 Route::post('/new', array('uses' => 'HomeController@postNew'))->before('csrf');
 
+Route::get('/edit/{id}', array('as' => 'edit', 'uses' => 'HomeController@getEdit'));
+
+Route::post('/edit/{id}', array('uses' => 'HomeController@postUpdate'));
+
 Route::get('/delete/{task}', array('as' => 'delete', 'uses' => 'HomeController@getDelete'));
 
 Route::controller('users', 'UsersController');
