@@ -73,11 +73,7 @@ class HomeController extends BaseController {
     }
 
     public function postUpdate() {
-      $item = Item::find(1);
-
-      $item->name = Input::get('name');
-
-      $item->save();
+      
 
 
       return Redirect::route('home');

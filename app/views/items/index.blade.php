@@ -10,8 +10,7 @@
       <li>
         
         {{ Form::open() }}
-         <!-- <small class="new"><a href="{{ URL::route('items.edit') }}">edit</a></small> -->
-         <a class="btn btn-small btn-info" href="{{ URL::to('items/' . $item->id . '/edit') }}">Edit</a>
+         <small class="new"><a href="{{ URL::route('items.edit') }}">edit</a></small>
 
           <input type="checkbox" class="chkbox"
             onClick="this.form.submit()"
