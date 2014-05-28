@@ -10,11 +10,7 @@
         <h1 class="heading">{{ HTML::link('http://localhost:8888', 'Todo Application in Laravel') }}</h1>
       </div>
       <div class="col-md-4">
-        <div>
-            @if(Session::has('message'))
-                <p class="alert">{{ Session::get('message') }}</p>
-            @endif
-        </div>
+        
         
           @if (Auth::check())
             <div class="welcome">

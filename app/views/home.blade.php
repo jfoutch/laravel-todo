@@ -2,6 +2,12 @@
 
 @section('content')
 
+<div>
+            @if(Session::has('message'))
+                <p class="alert">{{ Session::get('message') }}</p>
+            @endif
+        </div>
+
   <h4>{{ Auth::user()->firstname }}'s items</h4>
 
   <ul> <small class="new"><a href="{{ URL::route('new') }}">Create New Task</a></small>

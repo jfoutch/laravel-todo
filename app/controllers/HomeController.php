@@ -62,7 +62,8 @@ class HomeController extends BaseController {
 
     $item->save();
 
-    return Redirect::route('home');
+    Session::flash('message', 'Successfully created item');
+      return Redirect::route('home');
 
   }
 
