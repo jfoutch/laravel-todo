@@ -56,10 +56,10 @@ class ItemsController extends \BaseController {
 	public function edit($id)
 	{
 		{
-		// get the nerd
+		
 		$item = Item::find($id);
 
-		// show the edit form and pass the nerd
+		
 		return View::make('items.edit')
 			->with('item', $item);
 	}

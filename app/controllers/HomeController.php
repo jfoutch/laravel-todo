@@ -42,7 +42,7 @@ class HomeController extends BaseController {
 
   public function postNew() {
 
-    $rules = array('name' => 'required|min:3|max:255');
+    $rules = array('name' => 'required|min:3|max:255', 'category' => 'required');
 
     $validator = Validator::make(Input::all(), $rules);
 
@@ -57,6 +57,8 @@ class HomeController extends BaseController {
     $item = new Item;
 
     $item->name = Input::get('name');
+
+    $item->category = Input::get('category');
 
     $item->owner_id = Auth::user()->id;
 

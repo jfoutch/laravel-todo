@@ -10,6 +10,8 @@
 
   {{ Form::open() }}
 
+      <input type="text" name="category" placeholder="The category of your task" />
+
       <input type="text" name="name" placeholder="The name of your task" />
 
       <input type="submit" value="Create" class="btn btn-default" />
